@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    color: red;
+    background-color: lightcyan;
+    margin-bottom: 20px;
+    height: 50px;
+    align-items: center;
+    font-size: 24px;
+}
+
+.name {
+    padding: 20px;
+}
+
+.navlink {
+    color: blue;
+    text-decoration: none;
+    padding-right: 20px;
+}
