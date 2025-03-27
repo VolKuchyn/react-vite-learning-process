@@ -13,7 +13,7 @@ let initialState = {
 };
 
 
-export const fetchItems = createAsyncThunk('items/fetchItems', async ({page, count}, { rejectWithValue }) => {
+export const fetchItems = createAsyncThunk('items/fetchItems', async ({ page, count }, { rejectWithValue }) => {
     try {
         const responce = await axios.get(`${API_URL}?offset=${(page - 1) * count}&limit=${count}`);
         return responce.data;
@@ -34,6 +34,7 @@ export const itemsReducer = createSlice({
     extraReducers: (builder) => {
         builder
             .addCase(fetchItems.pending, (state) => {
+                state.items = [];
                 state.isLoading = true;
                 state.error = null;
             })
@@ -41,7 +42,6 @@ export const itemsReducer = createSlice({
                 state.isLoading = false;
                 state.items = action.payload;
                 state.error = null;
-                console.log(state.items);
             })
             .addCase(fetchItems.rejected, (state, action) => {
                 state.isLoading = false;

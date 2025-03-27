@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { v4 } from "uuid";
 import { addToDoItem } from "../../redux/todo-reducer";
 import ToDoItem from './ToDoItem';
+import './todo.css'
+
 
 const ToDoList = () => {
 
@@ -27,17 +29,19 @@ const ToDoList = () => {
 
 
     return (
+
         <div>
+
             <Formik
                 initialValues={
                     {
                         taskText: '',
                     }
                 }
-                onSubmit={(values, { resetForm }) => { 
+                onSubmit={(values, { resetForm }) => {
                     createToDoItem(values);
                     resetForm();
-                    }}>
+                }}>
 
                 <Form>
                     <div className={s.form}>

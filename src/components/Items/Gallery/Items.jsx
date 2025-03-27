@@ -1,9 +1,11 @@
 import React, { use } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setPage, fetchItems } from "../../redux/items-reducer";
+import { setPage, fetchItems } from "../../../redux/items-reducer";
 import s from './Items.module.css';
 import Item from "./Item";
+import { Link } from "react-router-dom";
+
 
 
 const Items = () => {
@@ -43,7 +45,7 @@ const Items = () => {
 
             <div className={s.gallery}>
                 {items.items.map(i => (
-                    <Item photo={i.images[0]} title={i.title} price={i.price} />
+                    <Item key={i.id} photo={i.images} title={i.title} category={i.category} description={i.description} price={i.price} id={i.id} />
                 ))}
 
             </div>

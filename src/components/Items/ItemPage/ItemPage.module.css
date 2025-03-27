@@ -1,0 +1,45 @@
+.itemImage {
+    width: 200px;
+    margin: 10px;
+}
+
+.mySlider {
+    width: 400px;
+}
+
+.slide {
+    display: flex !important;
+    justify-content: center;
+
+}
+
+.navWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    position: relative;
+    width: 200px;
+    height: 154px;
+    display: flex;
+    justify-content: center;
+}
+
+:global(.swiper-pagination) {
+    /* transform: translateY(13px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+:global(.swiper-pagination-bullet-active) {
+    background-color: red;
+}
+
+/* :global(.swiper-button-prev),
+:global(.swiper-button-next) {
+    position: relative;
+
+} */
