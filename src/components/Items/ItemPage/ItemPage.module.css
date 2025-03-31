@@ -27,10 +27,11 @@
 }
 
 :global(.swiper-pagination) {
-    /* transform: translateY(13px); */
+    position: static;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 
 }
 

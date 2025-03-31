@@ -1,0 +1,36 @@
+.progressBarWrapper {
+    height: 20px;
+    width: 80%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.progressBar {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+
+.quizGameWrapper {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    background-color: aquamarine;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px);
+}
+
+.quizGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    width: 70%;
+    border-radius: 20px;
+}

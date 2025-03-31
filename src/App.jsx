@@ -5,6 +5,7 @@ import Page2 from './components/Page2/Page2';
 import ToDoList from './components/ToDoList/toDoList';
 import Items from './components/Items/Gallery/Items';
 import ProductPage from './components/Items/ItemPage/ItemPage'
+import Quiz from './components/Quiz/Quiz';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/todo" element={<ToDoList />} />
         <Route path="/items" element={<Items />} />
         <Route path="/product/:id" element={<ProductPage />} />
+        <Route path="/quiz" element={<Quiz />} />
       </Routes>
 
 

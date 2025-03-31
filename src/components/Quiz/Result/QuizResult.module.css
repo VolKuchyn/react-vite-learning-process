@@ -1,0 +1,21 @@
+.resultCard {
+    width: 100%;
+    text-align: center;
+
+}
+
+.congratzImg {
+    width: 400px;
+}
+
+.oneMoreButton {
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}

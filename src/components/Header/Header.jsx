@@ -11,6 +11,7 @@ const Header = () => {
             <Link className={s.navlink} to='/page2'>Show variables page</Link>
             <Link className={s.navlink} to='/todo'>To Do List</Link>
             <Link className={s.navlink} to='/items'>Items</Link>
+            <Link className={s.navlink} to='/quiz'>Quiz</Link>
         </div>
 
     )
