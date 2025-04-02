@@ -11,7 +11,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import s from './ItemPage.Module.css';
+import s from './ItemPage.module.css';
 
 
 const ItemPage = (props) => {
