@@ -2,7 +2,7 @@
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://VolKuchyn.github.io/react-vite-learning-process/",
+  "homepage": "https://volkuchyn.github.io/react-vite-learning-process/",
   "type": "module",
   "scripts": {
     "dev": "vite",
