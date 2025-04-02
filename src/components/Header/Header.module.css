@@ -1,18 +1,78 @@
 .header {
     display: flex;
-    color: red;
-    background-color: lightcyan;
-    height: 70px;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    font-size: 24px;
-}
-
-.name {
-    padding: 20px;
+    padding: 1rem 2rem;
+    background-color: #333;
 }
 
 .navlink {
-    color: blue;
+    color: white;
     text-decoration: none;
-    padding-right: 20px;
+    margin-right: 1rem;
+    font-size: 1rem;
 }
+
+.navlink:hover {
+    text-decoration: underline;
+}
+
+.openNavPanelBtn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.sideNavPanel {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #222;
+    padding: 2rem 1rem;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.open {
+    left: 0;
+}
+
+.navPanelLink {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.navPanelLink:hover {
+    background-color: #444;
+    padding-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .navlink {
+        display: none;
+    }
+
+    .openNavPanelBtn {
+        display: block;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4); /* затемнення */
+    z-index: 900; /* нижче за сайдбар */
+  }
