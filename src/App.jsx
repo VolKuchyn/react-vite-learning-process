@@ -1,4 +1,4 @@
-import './App.module.css';
+import './App.css';
 import Header from './components/Header/Header';
 import FormPage from './components/FormPage/FormPage';
 import Page2 from './components/Page2/Page2';
