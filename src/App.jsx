@@ -2,7 +2,7 @@ import './App.module.css';
 import Header from './components/Header/Header';
 import FormPage from './components/FormPage/FormPage';
 import Page2 from './components/Page2/Page2';
-import ToDoList from './components/ToDoList/toDoList';
+import ToDoList from './components/ToDoList/ToDoList';
 import Items from './components/Items/Gallery/Items';
 import ProductPage from './components/Items/ItemPage/ItemPage'
 import Quiz from './components/Quiz/Quiz';
