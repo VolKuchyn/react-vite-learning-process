@@ -10,9 +10,6 @@ const Page2 = () => {
 
     return (
         <div>
-            <div className={s.name}>
-                Name: {formData.name}
-            </div>
             <div className={s.email}>
                 E-mail: {formData.email}
             </div>

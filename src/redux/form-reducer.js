@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 let initialState = {
-    name: 'Default Name',
     email: 'Default email',
     password: 'Default Password',
+    images: [],
 }
 
 export const userSlice = createSlice({
@@ -11,9 +11,9 @@ export const userSlice = createSlice({
     initialState,
     reducers: {
         setFields: (state, action) => {
-            state.name = action.payload.name;
             state.email = action.payload.email;
             state.password = action.payload.password;
+            state.images = action.payload.images;
         }
     }
 })
