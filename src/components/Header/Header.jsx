@@ -23,7 +23,8 @@ const Header = () => {
           <Link className={s.navlink} to="/todo">To Do List</Link>
           <Link className={s.navlink} to="/items">Items</Link>
           <Link className={s.navlink} to="/quiz">Quiz</Link>
-          <Link className={s.navlink} to="/dnd">Drag n Drop</Link>
+          <Link className={s.navlink} to="/react-beautiful-dnd">react-beautiful-dnd</Link>
+          <Link className={s.navlink} to="/dnd-kit">dnd-kit</Link>
   
           <button className={s.openNavPanelBtn} onClick={toggleSidebar}>☰</button>
         </div>
@@ -36,7 +37,7 @@ const Header = () => {
           <Link onClick={closeSidebar} className={s.navPanelLink} to="/todo">To Do List</Link>
           <Link onClick={closeSidebar} className={s.navPanelLink} to="/items">Items</Link>
           <Link onClick={closeSidebar} className={s.navPanelLink} to="/quiz">Quiz</Link>
-          <Link onClick={closeSidebar} className={s.navPanelLink} to="/dnd">Drag n Drop</Link>
+          <Link onClick={closeSidebar} className={s.navPanelLink} to="/dnd-kit">dnd-kit</Link>
         </div>
       </div>
     );

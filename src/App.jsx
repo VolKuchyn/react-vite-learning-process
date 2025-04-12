@@ -7,6 +7,7 @@ import Items from './components/Items/Gallery/Items';
 import ProductPage from './components/Items/ItemPage/ItemPage'
 import Quiz from './components/Quiz/Quiz';
 import DnD from './components/DnD/DnD';
+import DndKit from './components/Dnd-kit/Dnd-kit';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
         <Route path="/items" element={<Items />} />
         <Route path="/product/:id" element={<ProductPage />} />
         <Route path="/quiz" element={<Quiz />} />
-        <Route path="/dnd" element={<DnD />} />
+        <Route path="/react-beautiful-dnd" element={<DnD />} />
+        <Route path="/dnd-kit" element={<DndKit />} />
       </Routes>
 
 
